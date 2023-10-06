@@ -55,6 +55,7 @@ This replication package is composed as follow:
 
 * _results.ipynb_ is used to generate the graphs and plots shown in the manuscript
 
+* _InputOutput.zip_ is a .zip file containing two other compressed folders: _input.zip_ and _output.zip_. This including respectively the dataset collected and the output of the scripts used to run the experiments.
 
 * _input.zip_ contains the folder _input_: this folder contains the dataset collected and need to run the experiments. More specifically:
   * _datasets_ contains the subfolder _Consolidated_ where all the datasets related to both the normal execution and the failure injection execution can be found.
