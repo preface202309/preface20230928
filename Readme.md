@@ -23,7 +23,7 @@ This replication package includes:
 ## Terminology
 
 * **KPI**: Key Performance Indicators, values of the metrics collected from the **Alemira** system on a microservice level.
-* **Rectifier**: the component of PREFACE that reduces the variable input KPI series into a constant KPI set using descriptive statistics
+* **Anomalous KPI**: KPIs with a reconstruction error which is above the thershold of the KPI, calculated as three standard deviations of KPI's values on the normal dataset.
 * **Deep Autoencoder**: the component of PREFACE that identifies the anomalous KPIs by computing the reconstruction error for each KPI alongside the overall reconstruction error.
 * **Localizer**: this component aggregates the score of the anomalous KPIs that belong to the same micorservice and ranks them, signaling as failing microserivces the top ranked at each timestamp for which PREFACE predicts an anomalous state.
 
@@ -64,10 +64,10 @@ This replication package is composed as follow:
 * _output.zip_ contains the folder _output_: this folder contains all the output files generated from the scripts used. This file are saved in multiple subfolder contained in _output-111_. More specifically:
   * _datasets_ contains two subfolders, _Tuned_ and _Normalized_. These contain the preprocessed datasets and the normalized dataset according to the _min-max_ normalization technique respectively.
   * _predictions_ contains a .csv file for each failure injection dataset in which, for each timestamp, it stores a boolean value _1_ or _0_ indicating whether PREFACE predicted a failure or not.
-  * _anomalies_list_ contains a .csv file for each failure injection dataset, were we stored the reconstruction error of each KPI for each timestamp. This is used for debugging purposes.
-  * _anomalies_lists_services_only_ similarly, contains a .csv file for each failure injection dataset, were we stored the reconstruction error of each KPI related to the services ranked from the biggest to the smallest. This is used from the Localizer for the localization of the failure
-  * _anomalies_lists_services_only_sliding_window_ as before, contains a .csv file for each failure injection dataset, were for each minute we stored the ranked z-score calculated using the sliding window method described in the manuscript.
-  * _localisations_re_sliding_window_ includes a .csv file for each failure injection dataset, were we stored the ranking of the services using the z-score calculated as described in the manuscript.
+  * _anomalies_list_ contains a .csv file for each failure injection dataset, were we stored the reconstruction error of each anomalous KPI for each timestamp. This is used for debugging purposes.
+  * _anomalies_lists_services_only_ similarly, contains a .csv file for each failure injection dataset, were we stored the z-score of the reconstruction error of each anomalous KPI related to the services ranked from the biggest to the smallest.
+  * _anomalies_lists_services_only_sliding_window_ as before, contains a .csv file for each failure injection dataset, where for each minute we stored the ranked z-score of the z-score of the reconstruction error of the anomalous KPIs, calculated using the 20-minutes sliding window method described in the manuscript.
+  * _localisations_re_sliding_window_ includes a .csv file for each failure injection dataset, were we stored the ranking of the services using the z-score of the z-score of the reconstruction error calculated as described in the manuscript.
   * _models_ is the folder in which we store the trained Autoencoder.
   * _other_ stores a .csv file detailing the timing of each failure injection, including the _Failure Injection Experiment Name_, the _Total Number of Timestamps_, the _Timestamp at which Failure Injection Started_ and the _Timestamp at which Failure Injection Ended_
   * kpis_not_seen_in_prod
