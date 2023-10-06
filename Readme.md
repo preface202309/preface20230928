@@ -76,6 +76,9 @@ This replication package is composed as follow:
 
 
 * _functions.ipynb_ is a notebook containing additional useful functions used by the scripts described before.
+  
+
+* _Configs_ is a folder that contains the configurations needed from the scripts to run.
 
 ## Prerequisites
 
