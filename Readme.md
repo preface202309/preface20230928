@@ -14,8 +14,8 @@
 
 This replication package includes:
 
-1. **A large dataset of KPIs** collected from **Alemira**, a commercial Learning Managing System developed in Constructor Tech and currently in use in several educaitonal insitutions. **Alemira** is a microservice-based application deploied on Kubernetes that takes full advantaget of its autoscaling mechanisms.
-2. **The results of the experiments of PREFACE**, _PREdicting Failures in AutosCaling distributEd Applications_, the approach presented in our manuscript which predict and localize failures in autoscaling distributed applications.
+1. **A large dataset of KPIs** collected from **Alemira**, a commercial Learning Managing System developed in Constructor Tech and currently in use in several educational institutions. **Alemira** is a microservice-based application deployed on Kubernetes that takes full advantage of its autoscaling mechanisms.
+2. **The results of the experiments of PREFACE**, _PREdicting Failures in AutosCaling distributEd Applications_, the approach presented in our manuscript which predicts and localizes failures in autoscaling distributed applications.
 3. **The toolset to execute PREFACE** to replicate the results obtained based on the provided dataset.
 
 **PREFACE** combines descriptive statistics with a generative neural network (autoencoder) to reveal anomalous KPI values that are symptoms of incoming system failures, and ranks the microservices that are likely responsible for the failure. **PREFACE** introduces a prepocessing step exploiting descriptive statistics, to deal with time series of KPI sets with size that varies over time, as in autoscaling distributed applications.
