@@ -55,8 +55,6 @@ This replication package is composed as follow:
 
 * _results.ipynb_ is used to generate the graphs and plots shown in the manuscript
 
-* _InputOutput.zip_ is a .zip file containing two other compressed folders: _input.zip_ and _output.zip_. This including respectively the dataset collected and the output of the scripts used to run the experiments.
-
 * _input.zip_ contains the folder _input_: this folder contains the dataset collected and need to run the experiments. More specifically:
   * _datasets_ contains the subfolder _Consolidated_ where all the datasets related to both the normal execution and the failure injection execution can be found.
   * _other_ contains the _failure-injection-log.csv_, where the information of each failure injection are stored, including _Failure Type_, _Failure Pattern_, _Target Service_, _Beginning of the Experiment_, _End of the Experiment_, _Name of the Relative Dataset_, and _System Disruption Timestamp_.
