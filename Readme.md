@@ -1,6 +1,6 @@
 # Predicting Failures of Autoscaling Distributed Applications
 
-This is a temporary replication package anonymized for the double-blind review process. This replication package can be used to fully replicate the results of our manuscript _Predicting Failures of Autoscaling Distributed Applications_. After the review process is concluded, this repository will be available on Zenodo.
+This is a temporary replication package anonymized for the double-blind review process. This replication package can be used to fully replicate the results of our manuscript _Predicting Failures of Autoscaling Distributed Applications_. After the review process is concluded, this replication package will be available on Zenodo.
 
 ## Introduction
 
