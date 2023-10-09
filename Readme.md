@@ -4,6 +4,8 @@ This is a temporary replication package anonymized for the double-blind review p
 
 This replication package includes all the data, tools and instruction on how to run, interpret and obtain the results presented in our work.
 
+Please note that Anonymous GitHub doesn't currently allow the direct cloning of the repository. To overcome this issue, you could either downloda the individual files, or use the tool at available at the following link: https://github.com/fedebotu/clone-anonymous-github.
+
 ## Introduction
 
 
@@ -79,6 +81,8 @@ This replication package is composed as follow:
 
 
 ### Machine configuration for data analysis
+To run the experiment we used a machine with the following configuration. This is a tested setup, but the scripts presented in this replication package can be run using also other OS (Windows or Linux).
+
 - OS: MacOS Catalina
 - Processor: 2.2 GHz 6-Core Intel Core i7
 - Memory: 16 GB 2400 MHz DDR4
