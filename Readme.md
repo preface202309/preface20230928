@@ -1,13 +1,6 @@
-# Document Structure
+# Predicting Failures of Autoscaling Distributed Applications
 
- - Introduction
- - Terminology
- - Dataset naming conventions
- - Replication Package structure
- - Prerequisites
- - Environment Setup
- - Running Experiments
- 
+This is a temporary replication package anonymized for the double-blind review process. This replication package can be used to fully replicate the results of our manuscript _Predicting Failures of Autoscaling Distributed Applications_. After the review process is concluded, this repository will be available on Zenodo.
 
 ## Introduction
 
