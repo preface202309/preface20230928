@@ -4,7 +4,7 @@ This is a temporary replication package anonymized for the double-blind review p
 
 This replication package includes all the data, tools and instruction on how to run, interpret and obtain the results presented in our work.
 
-Please note that Anonymous GitHub doesn't currently allow the direct cloning of the repository. To overcome this issue, you could either downloda the individual files, or use the tool at available at the following link: https://github.com/fedebotu/clone-anonymous-github.
+Please note that Anonymous GitHub doesn't currently allow the direct cloning of the repository. To overcome this issue, you could either downloda the individual files, or use the tool publicly available at the following link: https://github.com/fedebotu/clone-anonymous-github.
 
 ## Introduction
 
