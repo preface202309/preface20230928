@@ -4,7 +4,7 @@ This is a temporary replication package anonymized for the double-blind review p
 
 This replication package includes all the data, tools and instruction on how to run, interpret and obtain the results presented in our work.
 
-Please note that Anonymous GitHub doesn't currently allow the direct cloning of the repository. To overcome this issue, you could either downloda the individual files, or use the tool publicly available at the following link: https://github.com/fedebotu/clone-anonymous-github.
+Please note that Anonymous GitHub doesn't currently allow the direct cloning of the repository. To overcome this issue, you could either downlod the individual files, or use the tool publicly available at the following link: https://github.com/fedebotu/clone-anonymous-github.
 
 ## Introduction
 
@@ -47,12 +47,12 @@ This replication package is composed as follow:
 * _data_set_normalize.ipynb_ is the notebook that normalizes the datasets using the _min-max_ normalization technique.
 
 
-* _predict.ipynb_ is responsible to generate train the Autoencoder model and generate the predictions according to its reconstruction error. This notebook also calculate the ranking of the services in order to allow the localization of the failure
+* _predict.ipynb_ is responsible to train the Autoencoder model and generate the predictions according to its reconstruction error. This notebook also calculate the ranking of the services in order to allow the localization of the failure
 
 
 * _results.ipynb_ is used to generate the graphs and plots shown in the manuscript
 
-* _input_ contains the folder _input_: this folder contains the dataset collected and need to run the experiments. More specifically:
+* _input_ contains the folder _input_: this folder contains the dataset collected and needed to run the experiments. More specifically:
   * _datasets_ contains the subfolder _Consolidated_ where all the datasets related to both the normal execution and the failure injection execution can be found. Please, be sure to unzip the file `normal_1_14.csv.zip` to avoid incurring in errors. This contains the dataset needed for the training of the model.
   * _other_ contains the _failure-injection-log.csv_, where the information of each failure injection are stored, including _Failure Type_, _Failure Pattern_, _Target Service_, _Beginning of the Experiment_, _End of the Experiment_, _Name of the Relative Dataset_, and _System Disruption Timestamp_.
 
@@ -60,10 +60,10 @@ This replication package is composed as follow:
 * _output_ contains the folder _output_: this folder contains all the output files generated from the scripts used. This file are saved in multiple subfolder contained in _output-111_. More specifically:
   * _datasets_ contains two subfolders, _Tuned_ and _Normalized_. These contain the preprocessed datasets and the normalized dataset according to the _min-max_ normalization technique respectively. Please be sure to unzip the file `normal_1_14.csv.zip` in _output/datasets/Normalized_ and _output/datasets/Tuned_ to avoid incurring in errors.
   * _predictions_ contains a .csv file for each failure injection dataset in which, for each timestamp, it stores a boolean value _1_ or _0_ indicating whether PREFACE predicted a failure or not.
-  * _anomalies_list_ contains a .csv file for each failure injection dataset, were we stored the reconstruction error of each anomalous KPI for each timestamp. This is used for debugging purposes.
-  * _anomalies_lists_services_only_ similarly, contains a .csv file for each failure injection dataset, were we stored the z-score of the reconstruction error of each anomalous KPI related to the services ranked from the biggest to the smallest.
+  * _anomalies_list_ contains a .csv file for each failure injection dataset, where we stored the reconstruction error of each anomalous KPI for each timestamp. This is used for debugging purposes.
+  * _anomalies_lists_services_only_ similarly, contains a .csv file for each failure injection dataset, where we stored the z-score of the reconstruction error of each anomalous KPI related to the services ranked from the biggest to the smallest.
   * _anomalies_lists_services_only_sliding_window_ as before, contains a .csv file for each failure injection dataset, where for each minute we stored the ranked z-score of the z-score of the reconstruction error of the anomalous KPIs, calculated using the 20-minutes sliding window method described in the manuscript.
-  * _localisations_re_sliding_window_ includes a .csv file for each failure injection dataset, were we stored the ranking of the services using the z-score of the z-score of the reconstruction error calculated as described in the manuscript.
+  * _localisations_re_sliding_window_ includes a .csv file for each failure injection dataset, where we stored the ranking of the services using the z-score of the z-score of the reconstruction error calculated as described in the manuscript.
   * _models_ is the folder in which we store the trained Autoencoder.
   * _other_ stores a .csv file detailing the timing of each failure injection, including the _Failure Injection Experiment Name_, the _Total Number of Timestamps_, the _Timestamp at which Failure Injection Started_ and the _Timestamp at which Failure Injection Ended_
   * kpis_not_seen_in_prod
