@@ -1,6 +1,7 @@
 # Predicting Failures of Autoscaling Distributed Applications
 
 This is a temporary replication package anonymized for the double-blind review process. This replication package can be used to fully replicate the results of our manuscript _Predicting Failures of Autoscaling Distributed Applications_. After the review process is concluded, this replication package will be available on Zenodo.
+
 Our work introduces **PREFACE**, an approach which combines descriptive statistics with a generative neural network (autoencoder) to reveal anomalous KPI values that are symptoms of incoming system failures, and ranks the microservices that are likely responsible for the failure. **PREFACE** introduces a prepocessing step exploiting descriptive statistics, to deal with time series of KPI sets with size that varies over time, as in autoscaling distributed applications.
 
 This replication package includes all the data, tools and instruction on how to run, interpret and obtain the results presented in our work.
