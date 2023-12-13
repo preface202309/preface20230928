@@ -27,7 +27,9 @@ This replication package includes:
 ## Dataset naming conventions
 
 The dataset collected during normal execution is named as follow:
-* `normal_1_14.csv`: this is the dataset that comprises the data collected over two weeks of normal, fault-free, execution and is used to train and validate the Deep Autoencoder.
+* `normal_1_14.csv`: this is the dataset that comprises the data collected over two weeks of normal, fault-free, execution and is used to train and validate the Deep Autoencoder. 
+The data was generated executing the **Alemira** system for two weeks deployed on Google Kubernetes Engine (GKE). **Alemira** takes advantage of Kubernetes autoscaling mechanisms. In our specific case, the system had a scalable configuration of 18 to 54 pods. The data was collected at a constant rate of a minute interval.
+
 
 The datasets collected during the execution with injected failures. The naming for these datasets follows the following convention: {failure-type}-{target service}-{unique identifier}. The failure type can be one of the following:
 * `linear-cpu-stress-userapi-051516.csv`
@@ -47,7 +49,7 @@ This replication package is composed as follow:
 * _data_set_normalize.ipynb_ is the notebook that normalizes the datasets using the _min-max_ normalization technique.
 
 
-* _predict.ipynb_ is responsible to train the Autoencoder model and generate the predictions according to its reconstruction error. This notebook also calculate the ranking of the services in order to allow the localization of the failure
+* _predict.ipynb_ is responsible to train the Autoencoder model and generate the predictions according to its reconstruction error. This notebook also calculate the ranking of the services in order to allow the localization of the failure.
 
 
 * _results.ipynb_ is used to generate the graphs and plots shown in the manuscript
