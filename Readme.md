@@ -21,13 +21,13 @@ This replication package includes:
 
 * **KPI**: Key Performance Indicators, values of the metrics collected from the **Alemira** system on a microservice level.
 * **Anomalous KPI**: KPIs with a reconstruction error which is above the thershold of the KPI, calculated as three standard deviations of KPI's values on the normal dataset.
-* **Deep Autoencoder**: the component of PREFACE that identifies the anomalous KPIs by computing the reconstruction error for each KPI alongside the overall reconstruction error.
+* **Deep Autoencoder**: the component of PREFACE that identifies the anomalous KPIs by computing the reconstruction error for each KPI alongside the overall reconstruction error. The architecture (size and number of layers) and hyperparameters of the Deep Autoencoder were defined and fine-tuned during the model validation process.
 * **Localizer**: this component aggregates the score of the anomalous KPIs that belong to the same micorservice and ranks them, signaling as failing microserivces the top ranked at each timestamp for which PREFACE predicts an anomalous state.
 
 ## Dataset naming conventions
 
 The dataset collected during normal execution is named as follow:
-* `normal_1_14.csv`: this is the dataset that comprises the data collected over two weeks of normal, fault-free, execution and is used to train and validate the Deep Autoencoder. 
+* `normal_1_14.csv`: this is the dataset that comprises the data collected over two weeks of normal, fault-free, execution and is used to train and validate the Deep Autoencoder. It includes a time series of KPIs collected from multiple monitoring tools (described in Section 4.1.3 and in Appendix A of the manuscript).
 The data was generated executing the **Alemira** system for two weeks deployed on Google Kubernetes Engine (GKE). **Alemira** takes advantage of Kubernetes autoscaling mechanisms. In our specific case, the system had a scalable configuration of 18 to 54 pods. The data was collected at a constant rate of a minute interval.
 
 
