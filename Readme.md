@@ -25,11 +25,11 @@ This replication package includes:
 * **Localizer**: this component aggregates the score of the anomalous KPIs that belong to the same micorservice and ranks them, signaling as failing microserivces the top ranked at each timestamp for which PREFACE predicts an anomalous state.
 
 ## Revision Changelog
-* Added analysis scripts for TrainTicket ** - todo**
+* Added analysis scripts for TrainTicket **- todo**
 * Added list of metrics collected for Alemira
-* Added list of metrics collected for TrainTicket ** - todo**
-* Added 4 additional datasets Alemira analysis ** - todo**
-* Added 15 datasets Trainticket analysis ** - todo**
+* Added list of metrics collected for TrainTicket **- todo**
+* Added 4 additional datasets Alemira analysis **- todo**
+* Added 15 datasets Trainticket analysis **- todo**
 
 ## Dataset naming conventions
 
