@@ -39,12 +39,29 @@ The data was generated executing the **Alemira** and **TrainTicket** system for 
 
 
 The datasets collected during the execution with injected failures. The naming for these datasets follows the following convention: {failure-type}-{target service}-{unique identifier}. The failure type can be one of the following:
-* `linear-cpu-stress-userapi-051516.csv`
-* `linear-cpu-stress-redis-091514.csv`
-* `linear-memory-stress-userapi-051218.csv`
-* `linear-memory-stress-redis-091522.csv`
-* `linear-network-delay-userapi-051816.csv`
-* `linear-network-delay-redis-092016.csv`
+* **Alemira**
+ * `linear-cpu-stress-userapi-051516.csv`
+ * `linear-cpu-stress-redis-091514.csv`
+ * `linear-memory-stress-userapi-051218.csv`
+ * `linear-memory-stress-redis-091522.csv`
+ * `linear-network-delay-userapi-051816.csv`
+ * `linear-network-delay-redis-092016.csv`
+* **TrainTicket**
+ * `linear-cpu-stress-ts-station-service-020211`
+ * `linear-cpu-stress-ts-basic-service-020616`
+ * `linear-cpu-stress-ts-train-service-020713`
+ * `linear-memory-stress-ts-station-service-021917`
+ * `linear-memory-stress-ts-basic-service-022009`
+ * `linear-memory-stress-ts-train-service-021316`
+ * `linear-network-delay-ts-station-service-013016`
+ * `linear-network-delay-ts-basic-service-020911`
+ * `linear-network-delay-ts-train-service-020116`
+ * `linear-cpu-train-memory-station-020912`
+ * `linear-cpu-station-memory-train-020810`
+ * `linear-cpu-train-delay-station-021212`
+ * `linear-cpu-station-delay-train-021310`
+ * `linear-memory-train-delay-station-022621`
+ * `linear-memory-station-delay-train-022622` 
 
 ## Replication Package structure
 
