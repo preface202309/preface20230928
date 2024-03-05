@@ -76,6 +76,7 @@ In this replication package there are two folders, one for each system in our ca
 
 
 * _data_set_normalize.ipynb_ is the notebook that normalizes the datasets using the _min-max_ normalization technique.
+
 These two last scripts are unified for Trainticket as _dataset_tune_normalize.ipynb_
 
 
