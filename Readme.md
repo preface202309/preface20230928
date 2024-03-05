@@ -29,7 +29,7 @@ This replication package includes:
 * Added scripts to compute the Baseline for both Alemira and TrainTicket
 * Added list of metrics collected for Alemira
 * Added list of metrics collected for TrainTicket
-* Added 4 additional datasets for Alemira **- todo**
+* Added 4 additional datasets for Alemira
 * Added 15 datasets for Trainticket **- todo**
 
 ## Dataset naming conventions
