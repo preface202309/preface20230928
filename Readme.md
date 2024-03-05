@@ -13,13 +13,13 @@ Please note that Anonymous GitHub doesn't currently allow the direct cloning of 
 
 This replication package includes:
 
-1. **A large dataset of KPIs** collected from **Alemira**, a commercial Learning Managing System developed in Constructor Tech and currently in use in several educational institutions. **Alemira** is a microservice-based application deployed on Kubernetes that takes full advantage of its autoscaling mechanisms.
+1. **A large dataset of KPIs** collected from **Alemira**, a commercial Learning Managing System developed in Constructor Tech and currently in use in several educational institutions, and **TrainTicket**, a microservice application widely used in research projects. Both are microservice-based applications deployed on Kubernetes that takes full advantage of its autoscaling mechanisms.
 2. **The results of the experiments of PREFACE**, _PREdicting Failures in AutosCaling distributEd Applications_, the approach presented in our manuscript which predicts and localizes failures in autoscaling distributed applications.
 3. **The toolset to execute PREFACE** to replicate the results obtained based on the provided dataset.
 
 ## Terminology
 
-* **KPI**: Key Performance Indicators, values of the metrics collected from the **Alemira** system on a microservice level.
+* **KPI**: Key Performance Indicators, values of the metrics collected from the **Alemira** and **TrainTicket** systems on a microservice level.
 * **Anomalous KPI**: KPIs with a reconstruction error which is above the thershold of the KPI, calculated as three standard deviations of KPI's values on the normal dataset.
 * **Deep Autoencoder**: the component of PREFACE that identifies the anomalous KPIs by computing the reconstruction error for each KPI alongside the overall reconstruction error. The architecture (size and number of layers) and hyperparameters of the Deep Autoencoder were defined and fine-tuned during the model validation process.
 * **Localizer**: this component aggregates the score of the anomalous KPIs that belong to the same micorservice and ranks them, signaling as failing microserivces the top ranked at each timestamp for which PREFACE predicts an anomalous state.
