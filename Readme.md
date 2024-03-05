@@ -26,7 +26,7 @@ This replication package includes:
 
 ## Revision Changelog
 * Added analysis scripts for TrainTicket **- todo**
-* Added scripts to compute the Baseline for both Alemira and TrainTicket **- todo**
+* Added scripts to compute the Baseline for both Alemira and TrainTicket
 * Added list of metrics collected for Alemira
 * Added list of metrics collected for TrainTicket **- todo**
 * Added 4 additional datasets Alemira analysis **- todo**
