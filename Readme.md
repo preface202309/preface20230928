@@ -24,6 +24,13 @@ This replication package includes:
 * **Deep Autoencoder**: the component of PREFACE that identifies the anomalous KPIs by computing the reconstruction error for each KPI alongside the overall reconstruction error. The architecture (size and number of layers) and hyperparameters of the Deep Autoencoder were defined and fine-tuned during the model validation process.
 * **Localizer**: this component aggregates the score of the anomalous KPIs that belong to the same micorservice and ranks them, signaling as failing microserivces the top ranked at each timestamp for which PREFACE predicts an anomalous state.
 
+## Revision Changelog
+* Added analysis scripts for TrainTicket _todo_
+* Added list of metrics collected for Alemira
+* Added list of metrics collected for TrainTicket _todo_
+* Added 4 additional datasets Alemira analysis _todo_
+* Added 15 datasets Trainticket analysis _todo_
+
 ## Dataset naming conventions
 
 The dataset collected during normal execution is named as follow:
